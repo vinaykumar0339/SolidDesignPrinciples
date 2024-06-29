@@ -166,5 +166,5 @@ notificationService.notifyUser(for: bankAccountSRP)
 
 
 /*: # Conclusion
- 
+ By understanding and applying the Single Responsibility Principle thoughtfully, you can create more maintainable, understandable, and flexible software.
 */
