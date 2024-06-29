@@ -4,7 +4,7 @@
  1. A class should have only one reason to change.
  2. Each class should focus on a single job or responsibility.
  
- # Benifits
+ # Benefits
  1. Improved Readability:
     * Easier to understand what each class does.
  2. Enhanced Maintainability:
