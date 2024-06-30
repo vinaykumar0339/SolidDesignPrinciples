@@ -93,20 +93,20 @@ flyBirdLSP(flyingBird: duckLSP)
 // flyBirdLSP(flyingBird: ostrichLSP)
 
 //: ## Using Protocol
-protocol Eater {
+protocol Eatable {
     func eat()
 }
-protocol Flyer {
+protocol Flyable {
     func fly()
 }
 
-class BirdLSPUsingProtocol: Eater {
+class BirdLSPUsingProtocol: Eatable {
     func eat() {
         print("BirdLSPUsingProtocol is eating")
     }
 }
 
-class DuckLSPUsingProtocol: Eater, Flyer {
+class DuckLSPUsingProtocol: Eatable, Flyable {
     func eat() {
         print("DuckLSPUsingProtocol is eating")
     }
@@ -116,13 +116,13 @@ class DuckLSPUsingProtocol: Eater, Flyer {
     }
 }
 
-class OstrichLSPUsingProtocol: Eater {
+class OstrichLSPUsingProtocol: Eatable {
     func eat() {
         print("OstrichLSPUsingProtocol is eating")
     }
 }
 
-func flyingBirdLSPUsingProtocol(flyer: Flyer) {
+func flyingBirdLSPUsingProtocol(flyer: Flyable) {
     flyer.fly()
 }
 
