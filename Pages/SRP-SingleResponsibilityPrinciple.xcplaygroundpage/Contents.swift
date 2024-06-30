@@ -1,21 +1,12 @@
 /*: [Previous](@previous)                                   [Home](Introduction)                                        [Next](@next)*/
 /*: # Definition
- The Single Responsibility Principle is the first principle in the Solid Principles framework.
+ The Single Responsibility Principle is the first principle in the Solid Design Principles.
  1. A class should have only one reason to change.
  2. Each class should focus on a single job or responsibility.
- 
- # Benefits
- 1. Improved Readability:
-    * Easier to understand what each class does.
- 2. Enhanced Maintainability:
-    * Changed affect only one class.
- 3. Increased Reusability:
-    * Single-Purpose classes can be used in different parts of the application.
- 4. Simplified Testing:
-    * Easier to test classes with a limited scope of functionality.
+
 */
 
-//: # Voilating SRP:
+//: # Violating SRP:
 
 class BankAccount {
     var accountNumber: String

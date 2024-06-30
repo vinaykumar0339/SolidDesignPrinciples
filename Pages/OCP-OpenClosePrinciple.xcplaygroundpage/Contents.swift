@@ -1,6 +1,6 @@
 /*: [Previous](@previous)                                   [Home](Introduction)                                        [Next](@next)*/
 /*: # Definition
-The Open/Close Principle is the second principle in the Solid Principle framework.
+The Open/Close Principle is the second principle in the Solid Design Principle.
 1. Software entities should be open for extension but closed for modification.
 */
 //: **Today Will discuss about discount calculator system.**
@@ -42,7 +42,7 @@ discountCalcualtor.calculateDiscount(discountType: .nodiscount, amount: 100)
 2. Increase Complexity:
    * `calculateDiscount` becomes complex with multiple discount types.
 3. Difficult Maintenance:
-   * Changes in discount logic require updates to calculateDiscount.
+   * Changes in discount logic require updates to `calculateDiscount`.
 */
 
 /*: # Adhering to OCP
@@ -87,7 +87,7 @@ let loyaltyDiscount = LoyaltyDiscount()
 let discountCalculatorOCP = DiscountCalculatorOCP(discounts: [seasonalDiscount, loyaltyDiscount])
 discountCalculatorOCP.calculateTotalDiscount(amount: 100)
 
-/*: # Benifits of Adhering to OCP:
+/*: # Benefits of Adhering to OCP:
 1. Improved Maintainability:
    * Adding New Discount types doesn't require modifying exising code.
 2. Enhanced Flexibility:
@@ -116,6 +116,10 @@ discountCalculatorOCP.calculateTotalDiscount(amount: 100)
    * Ensure the team has a shared understanding of OCP and consistent practices.
 5. Performance Profiling:
    * Profile and optimize performance to manage any overhead introduced by adhering to OCP.
+*/
+
+/*: # Conclusion
+By understanding and applying the Open/Closed Principle thoughtfully, you can create more maintainable, understandable, and flexible software.
 */
 
 
