@@ -6,14 +6,14 @@ The Dependency Inversion Principle is the fifth priciple in the Solid Design Pri
  
 ### High-Level Modules.
 1. High-Level Module contains important policy decisions and business logic.
-2. They Should not be effected by changing in Low-Level Modules.
+2. They Should not be affected by changes in Low-Level Modules.
  
 ### Low-Level Modules.
 1. Low-Level Modules contains implementation details.
 2. Changes in Low-Level Module should not affect High-Level Modules.
  
 ### Abstractions
-1. Use Interfaces or Abstraction class to create abtraction Layer.
+1. Use Interfaces or Abstraction class to create an abstraction Layer.
 2. High-level modules depend on this abstraction, allowing low-level module changes without affecting high-level logic.
 */
 
@@ -48,7 +48,7 @@ userService.createUser(name: "Vinay Kumar")
 */
 
 /*: # Adhering to DIP:
-Using Protocol We can adher to DIP.
+Using Protocol We can adhere to DIP.
 */
 
 protocol Logger {
@@ -114,6 +114,6 @@ userServiceDIPUsingConsoleLogger.createUser(name: "Vinay Kumar DIP ConsoleLogger
 */
 
 /*: # Conclusion:
- By understanding and applying the Dependency Inversion Principle thoughtfully, you can create more maintainable, understandable, and flexible software. Ensuring that high-level modules depend on abstractions rather than low-level details promotes better software design and enhances the overall quality of the codebase.
+ By thoughtfully understanding and applying the Dependency Inversion Principle, you can create more maintainable, understandable, and flexible software. Ensuring that high-level modules depend on abstractions rather than low-level details promotes better software design and enhances the overall quality of the codebase.
 */
 
